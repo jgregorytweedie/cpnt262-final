@@ -30,7 +30,14 @@
         <section id="banner">
 
             <div class="inner">
-                <div class="gallery"></div>
+                <div class="gallery">
+
+            <!-- Ivan: added 'main', fetch will land inside this  -->
+                    <main>
+
+                    </main>
+
+                </div>
             </div>
         </section>
         <body class=<%= current %>>
@@ -42,30 +49,38 @@
         <!--Ivan: fetch() Implementation template -->
         <script>
 
-        fetch('/api/v0/gallery')
+        const main = document.querySelector('main');
 
+        fetch('/api/v0/gallery')
             .then(function(response) {
-                console.log(response);
-            // json -> javascript object
-                 return response.json();
+            console.log(response);
+            return response.json();
+        })
+            .then(function(data) {
+    // Any code that needs `data` should be in this code block.
+                console.log(data);
+                let imgTemplate = '';
+
+            data.forEach(function(item){
+                console.log(item);
+                imgTemplate += 
+                    `<figure>
+
+                        <img src="images/gallery/${item.id}/${item.width}/${item.height}" alt="${item.}">
+
+                        <figcaption>${item.description}</figcaption>
+
+                    </figure>`;
             })
 
-            .then(function(data) {
-                console.log(data);
+            main.innerHTML = imgTemplate;
+        })
+        
+            .catch((error) => {
+            console.error('Error:', error);
+        });
 
-                let outputHTML = ''; 
-
-                const main = document.querySelector('main');  
-
-                data.results.forEach(function(item){
-                // Step 4 code here
-                outputHTML += `<li><a href="${item.url}">${item.name}</li>`;
-            });
-            
-             main.innerHTML = `<ul>${outputHTML}</ul>`;
-            });
-
-        console.log('Done executing. The execution stack is now empty.');
+        console.log('Done executing main process.');
 
         </script>
 
