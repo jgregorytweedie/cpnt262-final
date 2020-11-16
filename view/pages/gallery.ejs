@@ -39,6 +39,36 @@
         <!-- subscribe -->
         <%- include('../../partials/subscribe'); %>
 
+        <!--Ivan: fetch() Implementation template -->
+        <script>
+
+        fetch('/api/v0/gallery')
+
+            .then(function(response) {
+                console.log(response);
+            // json -> javascript object
+                 return response.json();
+            })
+
+            .then(function(data) {
+                console.log(data);
+
+                let outputHTML = ''; 
+
+                const main = document.querySelector('main');  
+
+                data.results.forEach(function(item){
+                // Step 4 code here
+                outputHTML += `<li><a href="${item.url}">${item.name}</li>`;
+            });
+            
+             main.innerHTML = `<ul>${outputHTML}</ul>`;
+            });
+
+        console.log('Done executing. The execution stack is now empty.');
+
+        </script>
+
         <!-- Footer -->
         <%- include('../../partials/footer'); %>
 
