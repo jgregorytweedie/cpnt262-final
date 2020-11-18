@@ -24,6 +24,47 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ADD JSON ENDPOINTS
+app.get('/api/v0/gallery', (request, response) => {
+  .find({}, (error, data) => {
+    if (error) {
+      response.send('Could not retrieve gallery')
+    }
+    else {
+      response.json(data);
+    }
+  });
+});
+
+app.get('/api/v0/gallery/:id', (request, response) => {
+  Gallery.findOne({id: request.params.id}, (error, data) => {
+    if (error || data===null) {
+      response.send('Could not find gallery');
+      console.log(error);
+    }
+    else {
+      response.json(data);
+    } 
+  });
+});
+
+app.post('/subscribers', function(request, response) {
+  const subscribers = new Subscribers(request.body);
+  subscribers.save(function(error) {
+    if (error) return response.status(500).send(error);
+    return response.send(`<p>Thanks for the ${request.body.title}.</p>`);
+  });
+});
+
+app.get('/api/v0/subscribers', (request, response) => {
+  Subscribers.find({}, (error, data) => {
+    if (error) {
+      response.send('Could not retrieve subscribers')
+    }
+    else {
+      response.json(data);
+    }
+  });
+});
 
 // 404 RESPONSE
 app.use(function(require, response, next){
