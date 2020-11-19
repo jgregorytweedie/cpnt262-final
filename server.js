@@ -24,6 +24,12 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ADD JSON ENDPOINTS
+
+// index endpoint
+app.get('/', function(request, response){
+  response.render('pages/index.ejs', {title: 'title'})
+});
+
 app.get('/api/v0/gallery', (request, response) => {
   Gallery.find({}, (error, data) => {
     if (error) {
