@@ -1,87 +1,67 @@
 
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title><%= title %></title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/gallery.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
 </head>
 
-<body>
-    <div id="page-wrapper">
-
-        <!-- header & nav -->
+<body class=<%= current %>>
+    <!-- hero section -->
+    <section class="header">
         <%- include('../partials/header'); %>
 
-        <!-- Main -->
-        <article id="main">
+        <!-- nav bar  -->
+        <%- include('../partials/nav'); %>
+    </section>
 
-            <header class="special container">
-                <span class="icon solid fa-envelope"></span>
-                <h2>Get In Touch</h2>
-                <p><%=tagline%></p>
-            </header>
+    <section class="content">
+        <!-- at least one page (viewport) of content -->
+        <h3> Here is our gorgeous products...</h3>
 
-            <!-- One -->
-            <section class="wrapper style4 special container medium">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus? Perferendis, animi?</p>
 
-                <!-- Content -->
-                <div class="content">
-                    <form>
-                        <div class="row gtr-50">
-                            <div class="col-6 col-12-mobile">
-                                <input type="text" name="name" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-mobile">
-                                <input type="text" name="email" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="subject" placeholder="Subject" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Message" rows="7"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="buttons">
-                                    <li><input type="submit" class="special" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus? Perferendis, animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus? Perferendis, animi?</p>
 
-            </section>
-        </article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus? Perferendis, animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus.</p>
 
-        <!-- CTA -->
-        <%- include('../partials/cta'); %>
-
-        <!-- Footer -->
-        <%- include('../partials/footer'); %>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollgress.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus? Perferendis, animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem illum totam laborum. Modi
+            obcaecati cum repudiandae, sequi voluptatibus sed minima voluptatem reiciendis, repellat, unde adipisci
+            error accusamus.</p>
+        <!-- make it sticky -->
+        <div class="push"></div>
+    </section>
+    <!-- Footer -->
+    <%- include('../partials/footer'); %>
+    <script type="module" src="js/client.js"></script>
 </body>
-
-</html>
