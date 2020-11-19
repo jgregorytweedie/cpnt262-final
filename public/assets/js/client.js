@@ -1,32 +1,30 @@
-const main =
-// Asynchronous fetch gallery
-fetch(`${window.location.origin}/api/v0/gallery`)
-
-  // send JSON fetch
-  .then(function (response) {
+fetch (`${window.location.origin}/api/v0/gallery`)
+  .then(function(response){
+    // json returned from server
     return response.json();
-  })
+})
+  .then(function(shoes){
+  // data Javascript object 
+  console.log(shoes);
 
-  .then(function (shoes) {
-    console.log(shoes);
-    let output = '';
+  let output = '';
 
-    cakes.forEach(function (shoes) {
-      output += `<figure class="card">
-                  <img src=${shoes.id} alt="${shoes.title}" width=>
+  shoes.forEach(function(shoes) {
+    output += `<figure class="card">
+                  <img src="/images/gallery/${shoes.id}.jpg" alt="${shoes.title}"
+                  width="${shoes.width}" height="${shoes.height}">
                   <figcaption>
-                    <p>${shoes.description}</h2>
+                    <h5>${shoes.description}</h5>
                   </figcaption>
                 </figure>`;
-    });
-
-    // output to DOM
-    document.querySelector('.gallery').innerHTML = output;
-  })
-
-  // error 
-  .catch(function (error) {
-    if (error) {
-      console.log(" NO INFORMATION!");
-    }
   });
+
+  // container for images
+  document.querySelector('.gallery').innerHTML = output;
+})
+
+.catch(function(error){
+  if (error) {
+    console.log ("Oh no! you've done something wrong");
+  }
+});
