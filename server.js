@@ -50,8 +50,8 @@ app.post('/subscribers', function(request, response) {
   });
 });
 
-app.get('/api/v0/subscribers', (request, response) => {
-  Subscribers.find({}, (error, data) => {
+app.get('/api/v0/subscribers', function(request, response){
+  Subscribers.find({}, function(error, data){
     if (error) {
       response.send('Could not retrieve subscribers')
     }
@@ -61,7 +61,7 @@ app.get('/api/v0/subscribers', (request, response) => {
   });
 });
 
-app.get('api/v0/members', function(request, response) => {
+app.get('api/v0/members', function(request, response){
   response.json(4);
 });
 
