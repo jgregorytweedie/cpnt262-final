@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><%= title %></title>
+
+    <link rel="stylesheet" href="https://github.com/jgregorytweedie/cpnt262-final/public">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
@@ -17,22 +20,28 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-
 <body>
-    <!-- hero section -->
-    <section class="header">
-        <%- include('../partials/header'); %>
+<header>
+    <div class="wrapper">
+        <section class="logo">
 
-        <!-- nav bar  -->
-        <%- include('../partials/nav'); %>
-    </section>
+            <div class="header">
+                <!-- Header -->
+                <%- include('../partials/header'); %>
 
-    </head>
-    >
+                <!-- Nav -->
+                <div class="nav">
+                    <%- include('../partials/nav'); %>
+                </div>
+            </div>
+            </section>
+    </div>
+</header>
+
     <main>
         <section class="container">
             <figure class="card1">
-                <img src="./assets/images/b3.jpg" alt=" river">
+                <img src="./assets/images/b3.jpg" alt=" flower">
                 <div class="circle1"> </div>
                 <figcaption class="info">
                     <h2> Jane Doe</h2>
@@ -51,7 +60,7 @@
                 </div>
             </figure>
             <figure class="card2">
-                <img src="./assets/images/b5.jpg" alt=" river">
+                <img src="./assets/images/b5.jpg" alt=" flower">
                 <div class="circle2"> </div>
                 <figcaption class="info">
                     <h2> Mary Wintson</h2>
@@ -70,7 +79,7 @@
                 </div>
             </figure>
             <figure class="card3">
-                <img src="./assets/images/b1.jpg" alt=" river">
+                <img src="./assets/images/b1.jpg" alt=" flower">
                 <div class="circle3"> </div>
                 <figcaption class="info">
                     <h2> Sara Parker</h2>
@@ -95,6 +104,5 @@
     <%- include('../partials/footer'); %>
     <script type="module" src="js/client.js"></script>
 </body>
-/body>
 
 </html>
