@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ADD JSON ENDPOINTS
 
 // index endpoint
-app.get('/', function(request, response){
+app.get('/home', function(request, response){
   response.render('pages/home.ejs', {title: 'title'})
 });
 
