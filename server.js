@@ -1,5 +1,5 @@
 // these are all our dependencies that we need for the project - jayden.
-const path = require('path')
+const path = require('path');
 const express = require("express");
 const ejs = require("ejs");
 // mongoose stuff here - jayden
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ADD JSON ENDPOINTS
 app.get('/api/v0/gallery', (request, response) => {
-  .find({}, (error, data) => {
+  Gallery.find({}, (error, data) => {
     if (error) {
       response.send('Could not retrieve gallery')
     }
