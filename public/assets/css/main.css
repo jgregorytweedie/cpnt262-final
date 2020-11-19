@@ -1,114 +1,42 @@
-/* reset */
-*{
-  box-sizing: border-box;
-  
-}
- /* limit the max width */
-.gallery{
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));  
-  justify-items: center;
-  margin: auto;
-}
-
-.card{
+/* Navigation */
+nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 450px;
-  border: solid 3px rgba(0, 0, 0, 0.753);
+  background-color:grey;
+  border-bottom: 1px solid grey;
+  min-height: 10vh;
 }
-
-.card img{
-  height: 250px;
-  object-fit: cover;
-  min-width: 100%;
-  object-fit: cover;
-  
-}
-
-/* making it pretty */
-.card figcaption{
-  font-family: 'Domine', serif;
-  font: size 15px;
-}
-
-
-.hero {
+nav ul {
   display: flex;
-  min-height: 80vh;
-  background-image: url(../images/greenshoes.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  gap: 1rem;
+  margin: auto 2rem auto auto;
 }
-/* Text fields */
-  .text-fields p {
-    display: flex;
 
-  }
-  
-  .text-fields p label {
-    width: 10ch;
-  }
-  
-  .text-fields p input {
-    flex: 1;
-    padding:1em 1em ;
-     margin: auto ;
-  }
-  
-  /* Checkboxes and Radio buttons */
-  
-  fieldset ul {
-    margin-left: 2rem;
-  }
-  
-  fieldset ul input {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-  
-  /* Submit */
-  
-  .FOOTER {
+nav ul li {
+  font-size: 1.5rem;
+}
+
+.my-logo {
+  display:flex;
+  align-items:left;
+  text-align:left;
+  color:white;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em; 
+  min-width: 50ch;
+  font-size:35px;
+  /*justify-content:center;*/
+}
+
+my-logo a:hover
+{
+  color:black;
+  background-color:rgb(50, 102, 57);
+}
+/* footer */
+
+ .footer {
     color: white;
-    text-align: center;
-
+    text-align: center;background-color: black;
     padding: 1em;
     margin-top: 1em;
   }
-  button {
-    font-size: 15px;
-    padding: 1em;
-
-   background-color:black ;
-   color:white;
-  }
-  button:hover {
-   background-color:thistle;
-   color:black;
-  }
-  
-
-/* Form reset */
-fieldset {
-  border: none;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
-  border: 1px solid darkgrey;
-}
- /*red stat */
-abbr {
-  color:red;
-} 
-.creating-account{
-  background-color:rgb(19, 109, 101);
-  color:white;
-}
