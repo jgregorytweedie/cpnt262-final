@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // index endpoint
 app.get('/', function(request, response){
-  response.render('pages/index.ejs', {title: 'title'})
+  response.render('pages/home.ejs', {title: 'title'})
 });
 
 app.get('/api/v0/gallery', (request, response) => {
