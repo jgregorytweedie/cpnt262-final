@@ -8,6 +8,10 @@
 ### extra things to note
     - when commenting code, make sure to state your name after your comment
 
+### Heroku link:
+-https://cpnt262final.herokuapp.com/
+    - Put in endpoints like /gallery, /home, /member, /subscribe, to access different pages
+
 ### Things we need to do:
 #### FRONT END:
     - HOME PAGE
