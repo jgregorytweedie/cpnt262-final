@@ -42,8 +42,6 @@ app.get('/api/v0/gallery', function(request, response){
   response.json(shoes);
 });
 
-
-
 app.post('/subscribers', function(request, response) {
   const subscribers = new Subscribers(request.body);
   subscribers.save(function(error) {
@@ -61,6 +59,10 @@ app.get('/api/v0/subscribers', (request, response) => {
       response.json(data);
     }
   });
+});
+
+app.get('api/v0/members', function(request, response) => {
+  response.json(4);
 });
 
 // 404 RESPONSE
