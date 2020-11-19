@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 // app.use STATIC MIDDLEWARE
 app.use(express.static(path.join(__dirname, 'public')));
 
-// ADD JSON ENDPOINTS
+// ADD HTML AND JSON ENDPOINTS
 
 // index endpoint
 app.get('/', function(request, response){
@@ -42,28 +42,24 @@ app.get('/api/v0/gallery', function(request, response){
   response.json(shoes);
 });
 
-app.post('/subscribers', function(request, response) {
-  const subscribers = new Subscribers(request.body);
-  subscribers.save(function(error) {
-    if (error) return response.status(500).send(error);
-    return response.send(`<p>Thanks for the ${request.body.title}.</p>`);
-  });
+// subscribe page render 
+app.get('/subscribers', function(request, response) {
+  response.render('pages/subscribe', {
+    title: "Subscribe",
+    current: "subscribe",
+    tagline: "Subscribe to our page",
+  })
 });
 
-app.get('/api/v0/subscribers', function(request, response){
-  Subscribers.find({}, function(error, data){
-    if (error) {
-      response.send('Could not retrieve subscribers')
-    }
-    else {
-      response.json(data);
-    }
-  });
+// members page render
+app.get('/members', function(request, response) {
+  response.render('pages/members', {
+    title: "Members",
+    current: "members",
+})
 });
 
-app.get('api/v0/members', function(request, response){
-  response.json(4);
-});
+
 
 // 404 RESPONSE
 app.use(function(require, response, next){
