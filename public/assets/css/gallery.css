@@ -1,0 +1,29 @@
+/* Navigation */
+nav {
+  display: flex;
+  background-color:grey;
+  border-bottom: 1px solid grey;
+  min-height: 7vh;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  margin: auto 2rem auto auto;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+}
+
+
+/* home Page */
+
+ /* limit the max width */
+.gallery{
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));  
+  justify-items: center;
+  margin: auto;
+ 
+}

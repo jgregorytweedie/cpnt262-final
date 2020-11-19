@@ -1,0 +1,77 @@
+
+/* Subscribe page */
+
+/* Form */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.form {
+  min-height: 40vh;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color:white;
+  display: flex;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+fieldset legend {
+  margin:  1em auto auto auto;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+fieldset p {
+  display: flex;
+}
+
+fieldset p label {
+  width:25px;
+}
+
+fieldset p input, fieldset ul label {
+  flex: 1;
+  max-width: 45ch;
+}
+
+fieldset .required {
+  color: red;
+}
+
+fieldset ul {
+  display: flex;
+  margin: 1em  auto;
+  padding: 0;
+}
+
+fieldset ul input {
+  width: 20px;
+}
+
+fieldset button {
+  margin: 5px auto;
+}
+
+/* Button with hover and active states */
+.subscribe {
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  color: whitesmoke;
+  background-color:gray; 
+
+  font-size: 10px;
+}
+
+.subscribe:hover {
+  cursor: pointer;
+	background: tomato;
+	color:black;
+}
