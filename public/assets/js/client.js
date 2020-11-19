@@ -1,3 +1,4 @@
+const main =
 // Asynchronous fetch gallery
 fetch(`${window.location.origin}/api/v0/gallery`)
 
@@ -12,7 +13,7 @@ fetch(`${window.location.origin}/api/v0/gallery`)
 
     cakes.forEach(function (shoes) {
       output += `<figure class="card">
-                  <img src=${shoes.path} alt="${shoes.description}" width=>
+                  <img src=${shoes.id} alt="${shoes.title}" width=>
                   <figcaption>
                     <p>${shoes.description}</h2>
                   </figcaption>

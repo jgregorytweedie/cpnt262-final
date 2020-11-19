@@ -4,6 +4,7 @@ const express = require("express");
 const ejs = require("ejs");
 // mongoose stuff here - jayden
 const mongoose = require("mongoose");
+const shoes = require('./seeds/shoes');
 const dotenv = require("dotenv").config();
 // adding in connection to mongoDB - jayden
 mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true, useNewUrlParser: true });
@@ -31,7 +32,7 @@ app.get('/', function(request, response){
 });
 
 app.get('/api/v0/gallery', (request, response) => {
-  Gallery.find({}, (error, data) => {
+  shoes.find({}, (error, data) => {
     if (error) {
       response.send('Could not retrieve gallery')
     }
