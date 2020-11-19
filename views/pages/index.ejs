@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://github.com/jgregorytweedie/cpnt262-final/public">
 
 
     <!-- css-->
@@ -13,38 +13,54 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/member.css">
-    <link rel="stylesheet" href="assets/css/subscrib.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/member.css">
+    <link rel="stylesheet" href="./assets/css/subscrib.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
 
 </head>
 
 <body>
+<!--  header ,hero section and Navbar -->
+<header>
+ <div class="wrapper">
+        <section class="logo">
+
     <div class="header">
         <!-- Header -->
         <%- include('../partials/header'); %>
+
         <!-- Nav -->
+        <div class="nav">
         <%- include('../partials/nav'); %>
-        <!-- Hero Start -->
-        <section class="home-home">
+        </div>
+    </div>
+    </section>
+</div>
+</header>
+<main>
+
+        <section class="herosection">
+        
             <div class="container">
                 <h1> Enojoy green products</h1>
                 <br>
                 <h3>“Flowers are the music of the ground. From earth’s lips spoken without sound.” – Edwin Curran</h3>
+            </div>
+
         </section>
 
-        <!-- Main -->
-        <main class="gallery">
-            <!-- Gallery will go here -->
-        </main>
+
+      
+
+
         <!-- Long form text -->
         <section id="text-content">
-            <div class="container">
+            <div class="text-container">
                 <article class="Article">
-                    <main>
+    
 
                         <h1> Rose </h1>
                         <p> The Rock Rose (Pavonia lasiopetala), also known as the Rose Mallow, is a great perennial for
@@ -100,13 +116,13 @@
                             fern-like,
                             lacy appearance.</p>
                         <br>
-
-
-
-                        <!-- Footer -->
-                        <%- include('../partials/footer'); %>
+                 </article>
             </div>
-</body>
-<script type="Module" src="assets/js/client.js"></script>
-
+        </section>
+        </main>
+    </body> 
 </html>
+
+
+
+  
