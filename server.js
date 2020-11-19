@@ -10,6 +10,8 @@ mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true, useNewUrlP
 
 const db = mongoose.connection;
 
+const shoes = require('./seeds/shoes')
+
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 db.once("open", function() {
@@ -25,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ADD JSON ENDPOINTS
 app.get('/api/v0/gallery', (request, response) => {
-  Gallery.find({}, (error, data) => {
+  shoes.find({}, (error, data) => {
     if (error) {
       response.send('Could not retrieve gallery')
     }
