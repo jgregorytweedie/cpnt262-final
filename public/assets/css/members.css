@@ -19,7 +19,6 @@
 
 /* making it pretty */
 .card figcaption{
-  font-family: 'Domine', serif;
   font: size 15px;
 }
 .card-container {
@@ -90,7 +89,6 @@
    height: 14vh;
    border: 6px solid  hsla(0, 0%, 92%, 1 );
    border-radius: 50%;
-
    background-size: cover;
    background-position: center;
    margin: -3em  auto  auto  auto;
@@ -100,7 +98,6 @@
    display: flex;
    justify-content: space-evenly;
    color:black;
-
    font-size: 35px; 
    background-color:hsla(0, 0%, 92%, 1 );padding: 9px;
   }
@@ -112,6 +109,5 @@
    p{  
    margin:auto;
    text-align: center;
-
    padding: 1em 1em;
   }
