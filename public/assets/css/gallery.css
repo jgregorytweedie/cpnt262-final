@@ -1,8 +1,9 @@
 /* Navigation */
 nav {
   display: flex;
-  background-color:grey;
+  background-color:black;
   border-bottom: 1px solid grey;
+  color:white;
   min-height: 7vh;
 }
 nav ul {
