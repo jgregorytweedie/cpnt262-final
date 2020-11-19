@@ -1,19 +1,4 @@
-/* Navigation */
-nav {
-  display: flex;
-  background-color:grey;
-  border-bottom: 1px solid grey;
-  min-height: 10vh;
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-  margin: auto 2rem auto auto;
-}
 
-nav ul li {
-  font-size: 1.5rem;
-}
 
 .my-logo {
   display:flex;
@@ -40,3 +25,4 @@ my-logo a:hover
     padding: 1em;
     margin-top: 1em;
   }
+  

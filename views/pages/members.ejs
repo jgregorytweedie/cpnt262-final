@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/members.css">
+    <link rel="stylesheet" href="assets/css/subscrib.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <!-- hero section -->
+    <section class="header">
+        <%- include('../partials/header'); %>
+
+        <!-- nav bar  -->
+        <%- include('../partials/nav'); %>
+    </section>
+
+    </head>
+    >
+    <main>
+        <section class="container">
+            <figure class="card1">
+                <img src="./assets/images/b3.jpg" alt=" river">
+                <div class="circle1"> </div>
+                <figcaption class="info">
+                    <h2> Jane Doe</h2>
+                    <h4>Customer Service Representive</h4>
+                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                        egestas diam in arcu cursus.
+                    </p>
+                    <div class="fab">
+                        <footer class="fab">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                    </div>
+                </figcaption>
+                </div>
+            </figure>
+            <figure class="card2">
+                <img src="./assets/images/b5.jpg" alt=" river">
+                <div class="circle2"> </div>
+                <figcaption class="info">
+                    <h2> Mary Wintson</h2>
+                    <h4>Designer</h4>
+                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                        egestas diam in arcu cursus.
+                    </p>
+                    <div class="fab">
+                        <footer class="fab">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                    </div>
+                </figcaption>
+                </div>
+            </figure>
+            <figure class="card3">
+                <img src="./assets/images/b1.jpg" alt=" river">
+                <div class="circle3"> </div>
+                <figcaption class="info">
+                    <h2> Sara Parker</h2>
+                    <H4>Manager</H4>
+                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                        egestas diam in arcu cursu.
+                    </p>
+                    <div class="fab">
+                        <footer class="fab">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                    </div>
+                </figcaption>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <%- include('../partials/footer'); %>
+    <script type="module" src="js/client.js"></script>
+</body>
+/body>
+
+</html>
