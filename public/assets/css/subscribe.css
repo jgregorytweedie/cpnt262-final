@@ -10,7 +10,7 @@
 .form {
   min-height: 40vh;
   margin: auto;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 8px;
   background-color:white;
   display: flex;
@@ -60,18 +60,72 @@ fieldset button {
 }
 
 /* Button with hover and active states */
-.subscribe {
-  padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  color: whitesmoke;
-  background-color:gray; 
 
-  font-size: 10px;
+  /* subscribe */
+.signup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 60vw;
+  height: 50vh;
+  border: solid gray 1em;
+  background-color: white;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right:auto;
 }
 
-.subscribe:hover {
-  cursor: pointer;
-	background: tomato;
-	color:black;
+.singup h1{
+  font-size:17px;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield p input{
+  display: inline-block;
+  width: 40vw;
+  font-size: 18px;
+}
+
+.textfield p label{
+  display: inline-block;
+  width: 4em;
+ font-size: 18px;
+}
+
+abbr{
+  color: red;
+}
+
+form button{
+  font-size: 20px;
+  margin-left: 5em;
+  margin-right: auto;
+  margin-top: 3em;
+  padding:2em;
+  border-radius:1em;
+}
+
+form button:hover{
+  color:black;
+  background-color: tomato;
+  padding:2em;
+}
+ .fab {
+   display: flex;
+   flex-wrap:wrap ;
+   justify-content: center;
+   justify-items: center;
+   align-items:center;
+    text-align: center;
+    padding: 1em;
+   background-color:black;
+   font-size: 40px; 
+   color:white;
+   padding:0.2em;
+  }

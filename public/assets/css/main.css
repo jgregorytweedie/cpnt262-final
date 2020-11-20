@@ -1,40 +1,37 @@
   /* Navigation */
-nav {
-  display: flex;
-  background-color:black;
-  border-bottom: 1px solid grey;
-  color:white;
-  min-height: 7vh;
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-  margin: auto 2rem auto auto;
+  *body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
 }
 
-nav ul li {
-  font-size: 1.5rem;
-}
+
 .nav{
+  background-color:black;
+  border: 2px solid tomato;
+  color:white;
   position: absolute;
-  right:10px;
-  top:10px; 
+  right:25px;
+  top:25px; 
+  padding:2em;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  gap: 1.5rem;
-  font-size: 1.5rem;
-  padding-right: 1rem;
+  gap: 2em;
+  font-size: 30px;
+  padding-right: 2em;
 }
 
 nav ul {
   list-style-type: none;
  display:flex ;
+ gap: 1rem;
+  margin: auto 2rem auto auto;
 
  } 
 nav ul li {
  text-align: center;
+ font-size: 18px;
 }
   
 nav ul a {
@@ -49,7 +46,7 @@ nav ul a:hover {
   color:black;
 }
 nav ul a:active {
- background-color: hsl(60deg, 100%, 80%);
+ background-color: green;
   color: black;
 }
   
@@ -58,59 +55,3 @@ nav ul a.current {
  color:black;
 }
   
-/* subscribe */
-.signup{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-
-  width: 30vw;
-  height: 50vh;
-
-  border: solid rgb(160, 160, 240) 1rem;
-  background-color: rgb(160, 160, 240);
-
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right:auto;
-}
-
-.singup h1{
-  font-family: 'Lobster', cursive;
-  font-size: 3rem;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-}
-
-.textfield p input{
-  display: inline-block;
-  width: 20ch;
-}
-
-.textfield p label{
-  display: inline-block;
-
-  width: 9rem;
- font: size 10px;
-}
-
-abbr{
-  color: red;
-}
-
-form button{
-  font-size: 1.2rem;
-  margin-left: 5rem;
-  margin-right: auto;
-  margin-top: 1rem;
-}
-
-form button:hover{
-  color:gray;
-  background-color: white;
-}
