@@ -1,6 +1,7 @@
 *body{
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
+    min-height:100vh;
 }
 .card{
   display: flex;
@@ -17,22 +18,23 @@
 .card img{
   height: 370px;
   object-fit: cover;
+  min-width: 100%;
 }
 
- making it pretty
+/* making it pretty */
 .card figcaption{
   font-size:  15px;
- }
+}
 .card-container {
     display: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-  .card1, .card2, .card3 {
+  .card1, .card2, .card3 , .card4 {
   
       margin: 1em auto;
-      min-width: 20ch;
+      min-width: 40ch;
       max-width: 40ch;
       min-height:35ch;
       max-height:70ch;
@@ -60,41 +62,7 @@
    padding: 1em 1em;
   }
 
-   .circle1 {
-   display: flex;
-   width: 14vh;
-   height: 14vh;
-   border: 6px solid hsla(0, 0%, 92%, 1 );
-   border-radius: 50%;
-   background-image:url("https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/c1.jpg");
-   background-size: cover;
-   background-position: center;
-   margin: -3em auto  auto auto;
-  }
-  .circle2 {
-   display: flex;
-   width: 14vh;
-   height: 14vh;
-   border: 6px solid hsla(0, 0%, 92%, 1 );
-   border-radius: 50%;
-   background-image:url("https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/c2.jpg");
-
-   background-size: cover;
-   background-position: center;
-   margin: -3em  auto  auto  auto;
-  }
-  .circle3 {
-   display: flex;
-   width: 14vh;
-   height: 14vh;
-   border: 6px solid  hsla(0, 0%, 92%, 1 );
-   border-radius: 50%;
-   background-size: cover;
-   background-position: center;
-   margin: -3em  auto  auto  auto;
-   background-image:url("https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/c3.jpg")
-  }
-
+  
 
   .fab {
    display: flex;
