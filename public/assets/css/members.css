@@ -81,11 +81,10 @@ body {
 
 
 figure img{
-  width: 350px;
-  height: 400px;
+  width: 21em;
+  height: 23em;
   min-width: 100%;
    /* Make each image have the same height */
-  height: 200px;
 }
 
 /* making it pretty */
