@@ -124,18 +124,13 @@ body {
    
   } 
 
-
  .footer {
     display:flex;
-   flex-wrap:wrap ;
    justify-content: center;
-   justify-items: center;
    align-items:center;
     color: white;
-    text-align: center;
     background-color: black;
-    padding: 1em;
-    margin-top: 0.2em;
+    width: 100vw;
   }
 
  
@@ -152,6 +147,8 @@ body {
   background-color: white;
   border: 5px solid white;
   border-radius: 1em;
+
+  width: 100vw;
   }
 
 
