@@ -17,13 +17,12 @@
 .card img{
   height: 370px;
   object-fit: cover;
-  min-width: 100%;
 }
 
-/* making it pretty */
+ making it pretty
 .card figcaption{
   font-size:  15px;
-}
+ }
 .card-container {
     display: flex-start;
     flex-wrap: wrap;

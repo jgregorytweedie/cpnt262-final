@@ -2,25 +2,36 @@
   *body{
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
-    min-height:100vh;
+    /* min-height:100vh; */
 }
 
 
 .nav{
-  background-color:black;
-  border: 1px solid white;
-  color:white;
-  position: absolute;
-  right:5px;
-  top:5px; 
-  padding:1em;
-  list-style: none;
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
+  position: absolute;
+  right:5px;
+  padding:1em;
+  list-style: none;
   gap: 1em;
-  font-size: 30px;
-  padding-right: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+  border-radius: 16px;
+  color: white;
+  border: 1px solid white;
+  padding: 5 27 5 27;
+
+}
+
+button {
+  font-size: 18px;
+
+}
+
+.sub {
+  background-color: grey;
 }
 
 nav ul {
