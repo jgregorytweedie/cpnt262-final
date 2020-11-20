@@ -18,9 +18,9 @@ const members = [
     github: "https://github.com/jgregorytweedie",
   },{
     name:   "Sanaz Daneshvar",
-    email:  "",
-    linkedIn: "",
-    github: "",
+    email:  "sanaz.daneshvar@gmail.com",
+    linkedIn: "Sanaz Daneshvar",
+    github: "https://github.com/SANAZDANESHVAR",
   },
 ];
 
