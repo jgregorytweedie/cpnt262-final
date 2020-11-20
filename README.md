@@ -11,14 +11,14 @@
 ### Heroku link:
 -https://cpnt262final.herokuapp.com/
 -heroku dashboard link so you can check the activity log: https://dashboard.heroku.com/apps/cpnt262final
-    - Put in endpoints like /gallery, /home, /member, /subscribe, to access different pages
+    - Put in endpoints like /gallery, /member, /subscribe, to access different pages. The default endpoint is /home.
 
 ### Things we need to do:
 #### FRONT END:
     - HOME PAGE (completed)
         - ejs partials 
         - css
-    - GALLERY PAGE 
+    - GALLERY PAGE (completed)
         - ejs partials
         -css
     - SUBSCRIBE PAGE (completed)
