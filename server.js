@@ -7,6 +7,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 //  REQUIRE GALLERY MODULE - IVAN
 const shoes = require('./seeds/shoes');
+//  REQUIRE GALLERY MODELS
+const Shoe = require('./models/shoe');
 // adding in connection to mongoDB - jayden
 mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true, useNewUrlParser: true });
 
@@ -34,13 +36,19 @@ app.get('/', function(request, response){
 
 // gallery page render
 app.get('/gallery', function(request, response){
-  response.render('pages/gallery.ejs',{title: 'gallery'})
+  response.render('pages/gallery',{title: 'gallery'})
 });
 
 // gallery endpoint - ivan
 app.get('/api/v0/gallery', function(request, response){
   response.json(shoes);
 });
+
+// gallery/:id page render
+app.get('/gallery/:id', function(request, response){
+  response.send(`<img src="/images/gallery/${request.params.id}.jpg">`)
+});
+
 
 // subscribe page render 
 app.get('/subscribe', function(request, response) {
