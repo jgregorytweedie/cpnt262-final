@@ -34,7 +34,7 @@ app.get('/', function(request, response){
 
 // gallery page render
 app.get('/gallery', function(request, response){
-  response.render('pages/gallery',{title: 'gallery'})
+  response.render('pages/gallery.ejs',{title: 'gallery'})
 });
 
 // gallery endpoint - ivan
@@ -43,7 +43,7 @@ app.get('/api/v0/gallery', function(request, response){
 });
 
 // subscribe page render 
-app.get('/subscribers', function(request, response) {
+app.get('/subscribe', function(request, response) {
   response.render('pages/subscribe', {
     title: "Subscribe",
     current: "subscribe",
