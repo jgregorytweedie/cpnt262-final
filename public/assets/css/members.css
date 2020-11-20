@@ -23,6 +23,7 @@
 /* making it pretty */
 .card figcaption{
   font-size:  12px;
+   
 }
 .card-container {
     display: flex-start;
@@ -32,11 +33,6 @@
 
   .card1, .card2, .card3 , .card4 {
   
-      margin: 1em auto;
-      min-width: 30ch;
-      max-width: 30ch;
-      min-height:70ch;
-      max-height:70ch;
       display: flex;
       flex-direction: column;
       background-color:hsla(0, 0%, 92%, 1);
