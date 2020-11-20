@@ -62,13 +62,13 @@ app.get('/members', function(request, response) {
 //
 app.post('/subscribers',function(request, response) {
   Subscriber.insertMany(request.body);
-  response.send('<p>Could not retrieve subscribers</p>);               
+  response.send('<p>Could not retrieve subscribers</p>')  
 });
   
 app.get('/api/subscribers', function(request, response) {
   Subscriber.find({}, function(err, data) {
     if(error) {
-      response.send('<p>could not retrieve subscribers</p>);
+      response.send('<p>could not retrieve subscribers</p>');
     }else {
      response.json(data);               
     }
