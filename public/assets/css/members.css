@@ -25,9 +25,9 @@
   .card1, .card2, .card3 , .card4 {
   
       margin: 1em auto;
-      min-width: 30ch;
+      
       max-width: 30ch;
-      min-height:75ch;
+      
       max-height:75ch;
       display: flex;
       flex-direction: column;
