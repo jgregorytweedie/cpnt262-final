@@ -1,4 +1,3 @@
-// FOR SUBSCRIBE
 const members = [
   {
     name:   "Abdullah Quraishi",
@@ -8,9 +7,9 @@ const members = [
   },
   {
     name:   "Ivan Lavena",
-    email:  "",
-    linkedIn: "",
-    github: "",
+    email:  "ivan.lavena24@gmail.com",
+    linkedIn: " www.linkedin.com/in/ivanl24",
+    github: "https://github.com/IvanL24",
   },
   {
     name:   "Jayden Tweedie",

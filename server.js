@@ -1,11 +1,12 @@
 // these are all our dependencies that we need for the project - jayden.
+// mongoose stuff here - jayden
 const path = require('path');
 const express = require("express");
 const ejs = require("ejs");
-// mongoose stuff here - jayden
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
-//  REQUIRE GALLERY MODULE - IVAN
+
+//  require gallery module - ivan
 const shoes = require('./seeds/shoes');
 
 
@@ -25,6 +26,7 @@ db.once("open", function() {
   console.log("Connected to DB...");
 
 });
+
 // CREATE EXPRESS APP
 const app = express();
 app.set('view engine', 'ejs');
@@ -32,11 +34,13 @@ app.set('view engine', 'ejs');
 // app.use STATIC MIDDLEWARE
 app.use(express.static(path.join(__dirname, 'public')));
 
-// ADD HTML AND JSON ENDPOINTS
+// ***********************************************************************************************
+    // RENDERED ENDPOINTS
+// ***********************************************************************************************
 
-// index endpoint
+// index page render
 app.get('/', function(request, response){
-  response.render('pages/index.ejs', {title: 'title'})
+  response.render('pages/index.ejs', {title: 'homepage'})
 });
 
 // gallery page render
@@ -44,15 +48,47 @@ app.get('/gallery', function(request, response){
   response.render('pages/gallery',{title: 'gallery'})
 });
 
-// gallery endpoint - ivan
+// members page render
+app.get('/members', function(request, response) {
+  response.render('pages/members', {title: 'members'})
+});
+
+// subscribe page render 
+app.get('/subscribe', function(request, response) {
+  response.render('pages/subscribe', {title: 'subscribe'})
+});
+
+// ***********************************************************************************************
+    // API ENDPOINTS
+// ***********************************************************************************************
+
+// gallery api endpoint - ivan
 app.get('/api/v0/gallery', function(request, response){
     response.json(shoes);
 });
 
-// gallery/:id page render
+app.get('/api/subscribers', function(request, response) {
+  Subscriber.find({}, function(err, data) {
+    if(error) {
+      response.send('<p>could not retrieve subscribers</p>');
+    }else {
+     response.json(data);               
+    }
+  });
+})
+
+
+
+
+
+// *************************************************************************************************
+    // API : ID ENDPOINTS
+// *************************************************************************************************
+
+// gallery/:id to get object individually
 app.get('api/v0/shoes/:id', function(request, response){
   let shoeId = request.params.id;
-  Shoe.find({id: shoeId}, function(error,shoes){
+  Shoe.findOne({id: shoeId}, function(error,shoes){
     if (error) {
       response.send('file does not exist')
     }
@@ -63,40 +99,15 @@ app.get('api/v0/shoes/:id', function(request, response){
   
 });
 
-
-// subscribe page render 
-app.get('/subscribe', function(request, response) {
-  response.render('pages/subscribe', {
-    title: "Subscribe",
-    current: "subscribe",
-    tagline: "Subscribe to our page",
-  })
-});
-
-// members page render
-app.get('/members', function(request, response) {
-  response.render('pages/members', {
-    title: "Members",
-    current: "members",
-})
-});
-
-//
 app.post('/subscribers',function(request, response) {
   Subscriber.insertMany(request.body);
   response.send('<p>Could not retrieve subscribers</p>')  
 });
   
-app.get('/api/subscribers', function(request, response) {
-  Subscriber.find({}, function(err, data) {
-    if(error) {
-      response.send('<p>could not retrieve subscribers</p>');
-    }else {
-     response.json(data);               
-    }
-  });
-})
-  
+
+
+// *************************************************************************************************
+
 // 404 RESPONSE
 app.use(function(require, response, next){
   response.status(404);
