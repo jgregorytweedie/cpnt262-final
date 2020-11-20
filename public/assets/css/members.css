@@ -1,10 +1,10 @@
-margin: 1em auto;*body{
+*body{
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
     min-height:100vh;
 }
-.
-}
+
+
 
 .card img{
   object-fit: cover;
@@ -23,17 +23,12 @@ margin: 1em auto;*body{
 }
 
   .card1, .card2, .card3 , .card4 {
-<<<<<<< HEAD
-      min-width: 40ch;
-      max-width: 40ch;
-=======
   
       margin: 1em auto;
       min-width: 350px;
       max-width: 350px;
       min-height:600px;
       max-height:600px;
->>>>>>> c54da81cdcd0ebca0005bb66ddc874a7da3cfae6
       display: flex;
       flex-direction: column;
       background-color:hsla(0, 0%, 92%, 1);
