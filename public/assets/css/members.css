@@ -16,14 +16,14 @@
 }
 
 .card img{
-  height: 370px;
   object-fit: cover;
   min-width: 100%;
 }
 
 /* making it pretty */
 .card figcaption{
-  font-size:  15px;
+  font-size:  12px;
+   
 }
 .card-container {
     display: flex-start;
@@ -32,11 +32,7 @@
 }
 
   .card1, .card2, .card3 , .card4 {
-  
-      
-      min-width: 40ch;
-      max-width: 40ch;
-      
+   
       display: flex;
       flex-direction: column;
       background-color:hsla(0, 0%, 92%, 1);
@@ -70,19 +66,12 @@
    justify-items: center;
    align-items:center;
     text-align: center;
-    padding: 1em;
+    padding: 0.2em;
    background-color:black;
-   font-size: 40px; 
+   font-size: 38px; 
    color:white;
-   padding:0.2em;
   }
+
    .info {
    margin:0  auto ;
-  }
-
-
-   p{  
-   margin:auto;
-   text-align: center;
-   padding: 1em 1em;
   }
