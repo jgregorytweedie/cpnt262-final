@@ -34,7 +34,7 @@
   .card1, .card2, .card3 , .card4 {
   
       margin: 1em auto;
-      min-width: 20ch;
+      min-width: 40ch;
       max-width: 40ch;
       min-height:35ch;
       max-height:70ch;
