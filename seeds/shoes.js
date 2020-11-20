@@ -2,7 +2,7 @@ const shoes = [
   {
     id:           1011,
     title:        'some shoes',
-    description:  'some description',
+    description:  'first pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -11,7 +11,7 @@ const shoes = [
   {
     id:           1012,
     title:        'some shoes',
-    description:  'some description',
+    description:  'second pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -20,7 +20,7 @@ const shoes = [
   {
     id:           1013,
     title:        'some shoes',
-    description:  'some description',
+    description:  'third pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -29,7 +29,7 @@ const shoes = [
   {
     id:           1014,
     title:        'some shoes',
-    description:  'some description',
+    description:  'fourth pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -38,7 +38,7 @@ const shoes = [
   {
     id:           1015,
     title:        'some shoes',
-    description:  'some description',
+    description:  'fifth pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -47,7 +47,7 @@ const shoes = [
   {
     id:           1016,
     title:        'some shoes',
-    description:  'some description',
+    description:  'sixth pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -56,7 +56,7 @@ const shoes = [
   {
     id:           1017,
     title:        'some shoes',
-    description:  'some description',
+    description:  'seventh pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -65,7 +65,7 @@ const shoes = [
   {
     id:           1018,
     title:        'some shoes',
-    description:  'some description',
+    description:  'eigth pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
@@ -74,7 +74,7 @@ const shoes = [
   {
     id:           1019,
     title:        'some shoes',
-    description:  'some description',
+    description:  'nineth pair of shoes',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
