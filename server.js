@@ -46,7 +46,16 @@ app.get('/api/v0/gallery', function(request, response){
 
 // gallery/:id page render
 app.get('/gallery/:id', function(request, response){
-  response.send(`<img src="/images/gallery/${request.params.id}.jpg">`)
+  let shoeId = request.params.id;
+  Shoe.findOne({id: shoeId}, function(error,data){
+    if (error){
+      response.send('There is something wrong.');
+      console.log(error);
+    }
+    else {
+      response.json(data);
+    }
+  })
 });
 
 
