@@ -48,7 +48,7 @@ my-logo a:hover
    align-items:center;
    background-position:top;
    background-size:cover;
-   background-image: url("/public/images/homeshoes.jpg");
+   background-image: url("https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/homeshoes.jpg");
    color:black;
    text-align: left;
    padding-left:2em;
