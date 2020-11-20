@@ -7,8 +7,13 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 //  REQUIRE GALLERY MODULE - IVAN
 const shoes = require('./seeds/shoes');
-//  REQUIRE GALLERY MODELS
-const Shoe = require('./models/shoe');
+
+
+// import models- ivan
+const Shoe = require('./models/shoe.js');
+const Member = require('./models/member.js');
+const Subscribe = require('./models/subscribe.js');
+
 // adding in connection to mongoDB - jayden
 mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true, useNewUrlParser: true });
 
@@ -41,21 +46,21 @@ app.get('/gallery', function(request, response){
 
 // gallery endpoint - ivan
 app.get('/api/v0/gallery', function(request, response){
-  response.json(shoes);
+    response.json(shoes);
 });
 
 // gallery/:id page render
-app.get('/gallery/:id', function(request, response){
+app.get('api/v0/shoes/:id', function(request, response){
   let shoeId = request.params.id;
-  Shoe.findOne({id: shoeId}, function(error,data){
-    if (error){
-      response.send('There is something wrong.');
-      console.log(error);
+  Shoe.find({id: shoeId}, function(error,shoes){
+    if (error) {
+      response.send('file does not exist')
     }
     else {
-      response.json(data);
+      response.json(shoes);
     }
-  })
+  });
+  
 });
 
 
