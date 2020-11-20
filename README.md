@@ -15,22 +15,22 @@
 
 ### Things we need to do:
 #### FRONT END:
-    - HOME PAGE
+    - HOME PAGE (completed)
         - ejs partials 
         - css
-    - GALLERY PAGE
+    - GALLERY PAGE 
         - ejs partials
         -css
-    - SUBSCRIBE PAGE
+    - SUBSCRIBE PAGE (completed)
         - ejs partials
         -css
     - MEMBERS PAGE
         - ejs partials
         -css
 #### BACK END:
-    - EJS and HTML endpoints
-    - JSON ENDPOINTS
-    - Schema model implementation
-    - frontend fetch implementation
-## note 
+    - EJS and HTML endpoints (completed)
+    - JSON ENDPOINTS (completed)
+    - Schema model implementation (completed)
+    - frontend fetch implementation (completed)
+
     
