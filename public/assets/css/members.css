@@ -84,6 +84,8 @@ figure img{
   width: 350px;
   height: 400px;
   min-width: 100%;
+   /* Make each image have the same height */
+  height: 200px;
 }
 
 /* making it pretty */
@@ -116,7 +118,7 @@ figure img{
    p{  
    margin:auto;
    text-align: center;
-   padding: 1em 1em;
+   
   }
 
   
@@ -128,10 +130,11 @@ figure img{
    justify-items: center;
    align-items:center;
     text-align: center;
-    padding: 0.2em;
+    padding: 0.1em;
    background-color:black;
    font-size: 38px; 
    color:white;
+   padding-top: 0.2em;
   }
 
    .info {
