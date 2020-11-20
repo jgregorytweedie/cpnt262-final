@@ -74,7 +74,7 @@ const shoes = [
   {
     id:           1019,
     title:        'some shoes',
-    description:  'Vans-style Nike,
+    description:  'Vans style Nike',
     width:        500,
     height:       500,
     imagePath:    'seeds/shoes.js',
