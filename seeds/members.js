@@ -14,9 +14,9 @@ const members = [
   },
   {
     name:   "Jayden Tweedie",
-    email:  "",
-    linkedIn: "",
-    github: "",
+    email:  "jgregorytweedie@gmail.com",
+    linkedIn: "jayden-tweedie",
+    github: "https://github.com/jgregorytweedie",
   },{
     name:   "Sanaz Daneshvar",
     email:  "",

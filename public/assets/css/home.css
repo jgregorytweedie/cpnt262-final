@@ -1,24 +1,26 @@
 /* home Page */
+*body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+}
 
 .wrapper {
   display:flex;
   flex-direction:column;
   background-color:black; 
-  color: white;
-  text-align: left;
   min-height: 10vh;
   width: 100vw;
   padding: 1em;
   }
   
-    .header{
+  .header{
   display:flex;
   align-items:left;
   text-align:left;
   color: white;
   text-align: center;
   background-color: black;
-  padding: 1em;
+  padding: 2em;
    margin-top: 1em;
   }
   
@@ -28,15 +30,15 @@
   text-align:left;
   color:white;
   padding-left: 1em;
-  padding-bottom: 1em; 
-  min-width: 50ch;
+  padding-bottom:1em; 
+  min-width: 70ch;
   font-size:40px;
 }
 
 my-logo a:hover
 {
-  color:black;
-  background-color:rgb(50, 102, 57);
+  color:green;
+
 }
 
 /* herosection */
@@ -52,16 +54,23 @@ my-logo a:hover
    color:black;
    text-align: left;
    padding-left:2em;
-   min-height:90vh;
+   min-height:85vh;
    width:100vw;
+   
   } 
 
 
  .footer {
+    display:flex;
+   flex-wrap:wrap ;
+   justify-content: center;
+   justify-items: center;
+   align-items:center;
     color: white;
-    text-align: center;background-color: black;
+    text-align: center;
+    background-color: black;
     padding: 1em;
-    margin-top: 1em;
+    margin-top: 0.2em;
   }
 
  
@@ -70,16 +79,17 @@ my-logo a:hover
   flex-wrap:wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 20px;
+  
   }
   
  
   .Article {
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   margin-top: 2em;
 }
-
-  
+ 
 
   
 

@@ -1,15 +1,17 @@
-    /* limit the max width */
+    /*  gallery pictures */
+    *body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin :auto;
-  gap: 0.7em;
-  /* in order to  be responsive   */
+  gap: 1em;
   grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
-
-  /* to make a limitatin on the maximum width */
   max-width: 1800px;
 }
 
@@ -40,13 +42,12 @@ img {
  body {
   margin: 0; 
   font-size: clamp(14px, 3vw, 22px);
-  font-variant: small-caps;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  
 }
 
 .figcaption {
- font-size:  12px;
+
  justify-content: center;
  text-align: center;
 }

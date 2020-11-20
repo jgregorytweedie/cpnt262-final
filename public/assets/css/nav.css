@@ -1,0 +1,57 @@
+  /* Navigation */
+  *body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+}
+
+
+.nav{
+  background-color:black;
+  border: 2px solid tomato;
+  color:white;
+  position: absolute;
+  right:25px;
+  top:25px; 
+  padding:2em;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 2em;
+  font-size: 30px;
+  padding-right: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+ display:flex ;
+ gap: 1rem;
+  margin: auto 2rem auto auto;
+
+ } 
+nav ul li {
+ text-align: center;
+ font-size: 18px;
+}
+  
+nav ul a {
+ text-decoration: none;
+  color: white;
+ border: 1px solid gray;
+ display: block;
+  padding: 0.5em 1em;
+}
+nav ul a:hover {
+ background-color:tomato;
+  color:black;
+}
+nav ul a:active {
+ background-color: green;
+  color: black;
+}
+  
+nav ul a.current {
+ background-color:wheat;
+ color:black;
+}
+  
