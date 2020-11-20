@@ -2,31 +2,32 @@
   *body{
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
+    min-height:100vh;
 }
 
 
 .nav{
   background-color:black;
-  border: 2px solid tomato;
+  border: 1px solid white;
   color:white;
   position: absolute;
-  right:25px;
-  top:25px; 
-  padding:2em;
+  right:5px;
+  top:5px; 
+  padding:1em;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  gap: 2em;
+  gap: 1em;
   font-size: 30px;
-  padding-right: 2em;
+  padding-right: 1em;
 }
 
 nav ul {
   list-style-type: none;
  display:flex ;
- gap: 1rem;
-  margin: auto 2rem auto auto;
+ gap: 1em;
+  margin: auto 1em auto auto;
 
  } 
 nav ul li {
@@ -42,7 +43,7 @@ nav ul a {
   padding: 0.5em 1em;
 }
 nav ul a:hover {
- background-color:tomato;
+ background-color:white;
   color:black;
 }
 nav ul a:active {
