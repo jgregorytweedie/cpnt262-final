@@ -25,18 +25,62 @@
 
 
 </head>
+    <body>
+        <main>
+            <div class="navigation">
+                <%- include('../partials/header'); %>
 
-<body>
-<!--  header ,hero section and Navbar -->
+                <%- include('../partials/nav'); %>
+            </div>
+            <div class="hero">
+                <div class="tagline">
+
+                    <h1> Handcrafted to perfection</h1>
+                    <h3>We understand the importance of good looking shoes. We also understand the importance of making good looking shoes affordable, So we made our shoes with both.</h3>
+                
+                </div>
+            </div>
+    
+            <div class="longtext">
+                <div>
+                    <h1> Who we are </h1>
+                    <p> Green shoes Warehouse ever since 1904 has been making fantastic, and affordable shoes to fit any occassion. The company has been passed down through generations, with each generation perfecting the art further more.</p>
+                </div>
+
+                <div>
+                    <h1> Our Mission </h1>
+                    <p> A lot of "big shot" companies like to make cheap shoes at the expense of ethical labour practices. The ethics of our warehouse is our top priority.</p>
+                        
+                </div>
+
+                <div>
+                    <h1> Affordable, Durable. </h1>
+                    <p> Our shoes are made out of only the best material that is fashionable, and that can last a long time. We know the pain of buying new fancy shoes and have them run down within 3 months. Our shoes are affordable, fashionable, and extremely durable. It's that simple.</p>
+                        
+                </div>
+                        
+            </div>
+
+            <div class="footer">
+                <%- include('../partials/footer'); %>
+
+            </div>
+        </main>
+    </body>
+
+</html>
+
+
+
+  
+<!-- <body>
     <header>
         <div class="wrapper">
             <section class="logo">
 
                 <div class="navigation">
-                    <!-- Header -->
                     <%- include('../partials/header'); %>
 
-                    <!-- Nav -->
                 
                     <%- include('../partials/nav'); %>
                 
@@ -47,11 +91,9 @@
 <main>
 
         <div class="herosection">
-        
-            <div class="container">
                 <h1> Handcrafted to perfection</h1>
                 <br>
-                <h3 class="font-container">We understand the importance of good looking shoes. We also understand the importance of making good looking shoes affordable, So we made our shoes with both.</h3>
+                <h3>We understand the importance of good looking shoes. We also understand the importance of making good looking shoes affordable, So we made our shoes with both.</h3>
             </div>
 
         </div>
@@ -60,12 +102,7 @@
       
 
 
-        <!-- Long form text -->
         <section id="text-content">
-            <div class="text-container">
-                <article class="Article">
-    
-
                         <h1> Who we are </h1>
                         <p> Green shoes Warehouse ever since 1904 has been making fantastic, and affordable shoes to fit any occassion. The company has been passed down through generations, with each generation perfecting the art further more.</p>
                         <br>
@@ -76,15 +113,6 @@
                         <p> Our shoes are made out of only the best material that is fashionable, and that can last a long time. We know the pain of buying new fancy shoes and have them run down within 3 months. Our shoes are affordable, fashionable, and extremely durable. It's that simple.</p>
                         <br>
                         </P>
-                 </article>
-            </div>
         </section>
         </main>
-        <!-- Footer -->
-        <%- include('../partials/footer'); %>
-    </body> 
-</html>
-
-
-
-  
+    </body>

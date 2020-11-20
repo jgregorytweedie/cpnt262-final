@@ -1,13 +1,88 @@
-*body{
+* {
+  box-sizing: border-box;
+}
+body {
+  /* display: flex; */
    font-family: 'Open Sans', sans-serif;
-   font-size: 15px;
-    min-height:100vh;
+   margin: 0;
+   /* font-size: 15px; */
+   height:100vh;
+}
+
+.navigation {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 8em;
+  margin: 1 2 auto 11;
+}
+
+.navigation .nav {
+  color: white;
+}
+
+.header {
+  display: flex;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.header .logo {
+  font-size: 3em;
+  margin: 7px 0 0 22px;
+}
+
+.header .logo h1 {
+  margin: 0; 
+  font-size: 41px;
+}
+
+.header .logo h3 {
+  margin: 0; 
+  font-size: 16px;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right:5px;
+  padding:1em;
+  list-style: none;
+  gap: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+  border-radius: 16px;
+  border: 1px solid white;
+  color: white;
+  font-size: 23px;
+  padding: 5px 27px 5px 27px;
+}
+
+.nav li a:hover {
+  color:rgb(175, 25, 25);
+}
+
+  
+
+.sub {
+  background-color: grey;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  
 }
 
 
-
-.card img{
-  object-fit: cover;
+figure img{
+  width: 350px;
+  height: 400px;
   min-width: 100%;
 }
 
@@ -24,11 +99,8 @@
 
   .card1, .card2, .card3 , .card4 {
   
-      margin: 1em auto;
       min-width: 350px;
       max-width: 350px;
-      min-height:600px;
-      max-height:600px;
       display: flex;
       flex-direction: column;
       background-color:hsla(0, 0%, 92%, 1);
@@ -49,7 +121,7 @@
 
   
 
-  .fab {
+  .icon .fab {
    display: flex;
    flex-wrap:wrap ;
    justify-content: center;

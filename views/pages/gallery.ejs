@@ -15,9 +15,9 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- <link rel="stylesheet" href="./assets/css/home.css"> -->
     <!-- <link rel="stylesheet" href="./assets/css/members.css"> -->
-    <link rel="stylesheet" href="./assets/css/nav.css">
+    <!-- <link rel="stylesheet" href="./assets/css/nav.css"> -->
     <!-- <link rel="stylesheet" href="./assets/css/subscrib.css"> -->
     <link rel="stylesheet" href="./assets/css/gallery.css">
 
@@ -26,36 +26,30 @@
 </head>
 
 <body>
-    <!--  header and Navbar -->
-    <header>
-        <div class="wrapper">
-            <section class="logo">
+   <main>
+        <div class="navigation">
+            <!-- Header -->
+            <%- include('../partials/header'); %>
 
-                <div class="navigation">
-                    <!-- Header -->
-                    <%- include('../partials/header'); %>
+            <!-- Nav -->
+        
+            <%- include('../partials/nav'); %>
+        </div>
+    <!-- GALLERY - ivan -->
+        <div class="gallery">
+    
+        </div>
 
-                    <!-- Nav -->
-                  
-                    <%- include('../partials/nav'); %>
-                </div>
-                <!-- GALLERY - ivan -->
-                <main class="gallery">
-                
-                </main>
-            </section>
-       </div>
-  </header>
+        <div class="footer">
+            <!-- Footer -->
+         <%- include('../partials/footer'); %>
+        </div>
+   </main> <!--  header and Navbar -->
+    
+    
 
-<body>
-    <!-- Main -->
-   <main class="gallery">
 
-    </main>
-</body>
-
-  <!-- Footer -->
-     <%- include('../partials/footer'); %>
+  
          
  <script type="module" src="assets/js/gallery.js"></script>
 

@@ -15,125 +15,208 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/css/home.css">
+    <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
     <link rel="stylesheet" href="assets/css/members.css">
-    <link rel="stylesheet" href="assets/css/subscrib.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
+    <!-- <link rel="stylesheet" href="assets/css/subscrib.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/gallery.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/nav.css"> -->
 
 </head>
+    <body>
+        <main>
+            <div class="navigation">
+                <%- include('../partials/header'); %>
 
-<body>
-    <header>
-        <div class="wrapper">
-            <section class="logo">
+                <%- include('../partials/nav'); %>
+            </div>
 
-                <div class="header">
-                    <!-- Header -->
-                    <%- include('../partials/header'); %>
-
-                    <!-- Nav -->
-
-                    <%- include('../partials/nav'); %>
-
-                </div>
-            </section>
-        </div>
-    </header>
-
-    <main>
-        <section class="container">
-            <figure class="card1">
-                <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Jayden.JPG"
-                    alt=" flower">
-                <figcaption class="info">
-                    <h2> Jayden</h2>
-                    <h4>Customer Service Representive</h4>
-                    <p>Eget mi proin sed libero enim sed faucibus turpis.
-                    </p>
-                    <div class="fab">
-                        <footer class="fab">
-
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fas fa-envelope"></i>
-                            <i class="fab fa-linkedin"></i>
-                    </div>
-                </figcaption>
-                </div>
-            </figure>
-            <figure class="card2">
-                <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Ivan.jpg"
-                    alt=" flower">
-
-                <figcaption class="info">
-                    <h2> Ivan</h2>
-                    <h4>Designer</h4>
-                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque.
-                    </p>
-                    <div class="fab">
-                        <footer class="fab">
-
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fas fa-envelope"></i>
-                            <i class="fab fa-linkedin"></i>
-
-                    </div>
-                </figcaption>
-                </div>
-            </figure>
-            <figure class="card3">
-                <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Abdullah.jpg"
-                    alt=" flower">
-                <div class="circle3"> </div>
-                <figcaption class="info">
-                    <h2> Abdullah</h2>
-                    <H4>Manager</H4>
-                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
-                        egestas diam in arcu cursu.
-                    </p>
-                    <div class="fab">
-                        <footer class="fab">
-
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fas fa-envelope"></i>
-                            <i class="fab fa-linkedin"></i>
-
-                    </div>
-                </figcaption>
-                </div>
-            </figure>
-            <figure class="card4">
-                <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Sanaz.jpg"
-                    alt=" flower">
-
-                <figcaption class="card4">
-                    <h2> Sanaz</h2>
-                    <h4>Designer</h4>
-                    <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
-                        egestas diam in arcu cursus.
-                    </p>
-                    <div class="fab">
-                        <footer class="fab">
-
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fas fa-envelope"></i>
-                            <i class="fab fa-linkedin"></i>
-
-                    </div>
-                </figcaption>
-                </div>
+            <div class="members">
+                <figure class="card1">
+                    <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Jayden.JPG"
+                        alt=" flower">
+                    <figcaption class="info">
+                        <h2> Jayden</h2>
+                        <h4>Customer Service Representive</h4>
+                        <p>Eget mi proin sed libero enim sed faucibus turpis.
+                        </p>
+                        <div class="icon">
+                            <footer class="fab">
+        
+                                <i class="fab fa-github"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fab fa-linkedin"></i>
+                        </div>
+                    </figcaption>
                 </figure>
-        </section>
-    </main>
+                <figure class="card2">
+                    <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Ivan.jpg"
+                        alt=" flower">
+        
+                    <figcaption class="info">
+                        <h2> Ivan</h2>
+                        <h4>Designer</h4>
+                        <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque.
+                        </p>
+                        <div class="icon">
+                            <footer class="fab">
+        
+                                <i class="fab fa-github"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fab fa-linkedin"></i>
+        
+                        </div>
+                    </figcaption>
 
-    <!-- Footer -->
-    <%- include('../partials/footer'); %>
-
-    <script type="module" src="js/client.js"></script>
-</body>
+                </figure>
+                <figure class="card3">
+                    <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Abdullah.jpg"
+                        alt=" flower">
+                    <div class="circle3"> </div>
+                    <figcaption class="info">
+                        <h2> Abdullah</h2>
+                        <H4>Manager</H4>
+                        <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                            egestas diam in arcu cursu.
+                        </p>
+                        <div class="icon">
+                            <footer class="fab">
+        
+                                <i class="fab fa-github"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fab fa-linkedin"></i>
+        
+                        </div>
+                    </figcaption>
+                
+                </figure>
+                <figure class="card4">
+                    <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Sanaz.jpg"
+                        alt=" flower">
+        
+                    <figcaption class="card4">
+                        <h2> Sanaz</h2>
+                        <h4>Designer</h4>
+                        <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                            egestas diam in arcu cursus.
+                        </p>
+                        <div class="icon">
+                            <footer class="fab">
+        
+                                <i class="fab fa-github"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fab fa-linkedin"></i>
+        
+                        </div>
+                    </figcaption>
+            
+                </figure>
+            </div>
+        </main>
+    </body>
 
 </html>
+
+
+
+
+
+<!--
+<main>
+    <section class="container">
+        <figure class="card1">
+            <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Jayden.JPG"
+                alt=" flower">
+            <figcaption class="info">
+                <h2> Jayden</h2>
+                <h4>Customer Service Representive</h4>
+                <p>Eget mi proin sed libero enim sed faucibus turpis.
+                </p>
+                <div class="fab">
+                    <footer class="fab">
+
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fab fa-linkedin"></i>
+                </div>
+            </figcaption>
+            </div>
+        </figure>
+        <figure class="card2">
+            <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Ivan.jpg"
+                alt=" flower">
+
+            <figcaption class="info">
+                <h2> Ivan</h2>
+                <h4>Designer</h4>
+                <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque.
+                </p>
+                <div class="fab">
+                    <footer class="fab">
+
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fab fa-linkedin"></i>
+
+                </div>
+            </figcaption>
+            </div>
+        </figure>
+        <figure class="card3">
+            <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Abdullah.jpg"
+                alt=" flower">
+            <div class="circle3"> </div>
+            <figcaption class="info">
+                <h2> Abdullah</h2>
+                <H4>Manager</H4>
+                <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                    egestas diam in arcu cursu.
+                </p>
+                <div class="fab">
+                    <footer class="fab">
+
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fab fa-linkedin"></i>
+
+                </div>
+            </figcaption>
+            </div>
+        </figure>
+        <figure class="card4">
+            <img src="https://raw.githubusercontent.com/jgregorytweedie/cpnt262-final/master/public/images/Sanaz.jpg"
+                alt=" flower">
+
+            <figcaption class="card4">
+                <h2> Sanaz</h2>
+                <h4>Designer</h4>
+                <p>Eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+                    egestas diam in arcu cursus.
+                </p>
+                <div class="fab">
+                    <footer class="fab">
+
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fab fa-linkedin"></i>
+
+                </div>
+            </figcaption>
+            </div>
+            </figure>
+    </section>
+
+    <div class="footer">
+    </div>
+</main>
+
+
+
+<script type="module" src="js/client.js"></script>
