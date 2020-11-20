@@ -8,29 +8,14 @@
 ### extra things to note
     - when commenting code, make sure to state your name after your comment
 
-### Heroku link:
--https://cpnt262final.herokuapp.com/
--heroku dashboard link so you can check the activity log: https://dashboard.heroku.com/apps/cpnt262final
-    - Put in endpoints like /gallery, /member, /subscribe, to access different pages. The default endpoint is /home.
+### Links:
+[Heroku](https://cpnt262final.herokuapp.com/)
+- Put in endpoints like /gallery, /member, /subscribe, to access different pages. The default endpoint is /home.
+[Github](https://github.com/jgregorytweedie/cpnt262-final)
 
-### Things we need to do:
-#### FRONT END:
-    - HOME PAGE (completed)
-        - ejs partials 
-        - css
-    - GALLERY PAGE (completed)
-        - ejs partials
-        -css
-    - SUBSCRIBE PAGE (completed)
-        - ejs partials
-        -css
-    - MEMBERS PAGE
-        - ejs partials
-        -css
-#### BACK END:
-    - EJS and HTML endpoints (completed)
-    - JSON ENDPOINTS (completed)
-    - Schema model implementation (completed)
-    - frontend fetch implementation (completed)
+### Attributions:
+1. Gallery images from https://www.unsplash.com/
+2. Fonts from google fonts: https://fonts.google.com/
+3. Font awesome for logo: https://fontawesome.com/
 
     
