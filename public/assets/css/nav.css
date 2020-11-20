@@ -34,36 +34,9 @@ button {
   background-color: grey;
 }
 
-nav ul {
-  list-style-type: none;
- display:flex ;
- gap: 1em;
-  margin: auto 1em auto auto;
 
- } 
-nav ul li {
- text-align: center;
- font-size: 18px;
+.nav li a:hover {
+  color:rgb(175, 25, 25);
 }
-  
-nav ul a {
- text-decoration: none;
-  color: white;
- border: 1px solid gray;
- display: block;
-  padding: 0.5em 1em;
-}
-nav ul a:hover {
- background-color:white;
-  color:black;
-}
-nav ul a:active {
- background-color: green;
-  color: black;
-}
-  
-nav ul a.current {
- background-color:wheat;
- color:black;
-}
+
   

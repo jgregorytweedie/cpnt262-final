@@ -64,10 +64,11 @@ body {
   padding: 5px 27px 5px 27px;
 }
 
-button {
-  font-size: 18px;
-
+.nav li a:hover {
+  color:rgb(175, 25, 25);
 }
+
+  
 
 .sub {
   background-color: grey;
@@ -102,12 +103,6 @@ button {
   padding-bottom:1em; 
   min-width: 70ch;
   font-size:40px;
-}
-
-my-logo a:hover
-{
-  color:green;
-
 }
 
 /* herosection */

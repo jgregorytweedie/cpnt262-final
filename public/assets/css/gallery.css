@@ -15,6 +15,12 @@
   color: white;
 }
 
+.nav li a:hover {
+  color:rgb(175, 25, 25);
+}
+
+  
+
 .header {
   display: flex;
   color: white;
