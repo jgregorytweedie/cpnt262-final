@@ -28,7 +28,7 @@
       
       max-width: 30ch;
       
-      max-height:75ch;
+      max-height:60ch;
       display: flex;
       flex-direction: column;
       background-color:hsla(0, 0%, 92%, 1);
