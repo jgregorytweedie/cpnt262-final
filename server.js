@@ -8,12 +8,14 @@ const dotenv = require("dotenv").config();
 
 //  require gallery module - ivan
 const shoes = require('./seeds/shoes');
+const subscribers = require('./seeds/subscribers');
+const members = require('./seeds/members');
 
 
 // import models- ivan
 const Shoe = require('./models/shoe.js');
 const Member = require('./models/member.js');
-const Subscribe = require('./models/subscribe.js');
+const Subscriber = require('./models/subscriber.js');
 
 // adding in connection to mongoDB - jayden
 mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true, useNewUrlParser: true });
@@ -49,13 +51,13 @@ app.get('/gallery', function(request, response){
 });
 
 // members page render
-app.get('/members', function(request, response) {
+app.get('/teams', function(request, response) {
   response.render('pages/members', {title: 'members'})
 });
 
 // subscribe page render 
-app.get('/subscribe', function(request, response) {
-  response.render('pages/subscribe', {title: 'subscribe'})
+app.get('/subscribers', function(request, response) {
+  response.render('pages/subscribers', {title: 'subscribe'})
 });
 
 // ***********************************************************************************************
@@ -67,15 +69,13 @@ app.get('/api/v0/gallery', function(request, response){
     response.json(shoes);
 });
 
-app.get('/api/subscribers', function(request, response) {
-  Subscriber.find({}, function(err, data) {
-    if(error) {
-      response.send('<p>could not retrieve subscribers</p>');
-    }else {
-     response.json(data);               
-    }
-  });
-})
+app.get('/api/v0/subscribers', function(request, response) {
+  response.json(subscribers);
+});
+
+app.get('api/v0/members', function(request, response){
+  response.json(members);
+});
 
 
 
@@ -98,6 +98,7 @@ app.get('api/v0/shoes/:id', function(request, response){
   });
   
 });
+
 
 app.post('/subscribers',function(request, response) {
   Subscriber.insertMany(request.body);

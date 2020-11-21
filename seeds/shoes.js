@@ -5,7 +5,7 @@ const shoes = [
     description:  'Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-1`,
 
   },
   {
@@ -14,7 +14,7 @@ const shoes = [
     description:  'black Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-2`,
 
   },
   {
@@ -23,7 +23,7 @@ const shoes = [
     description:  'Colorful shoes',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-3`,
 
   },
   {
@@ -32,7 +32,7 @@ const shoes = [
     description:  'white fashionable Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-4`,
 
   },
   {
@@ -41,7 +41,7 @@ const shoes = [
     description:  'White basketball Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-5`,
 
   },
   {
@@ -50,7 +50,7 @@ const shoes = [
     description:  'athletic light black shoes',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-6`,
 
   },
   {
@@ -59,7 +59,7 @@ const shoes = [
     description:  'skateboarder Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-7`,
 
   },
   {
@@ -68,7 +68,7 @@ const shoes = [
     description:  'Vans',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-8`,
 
   },
   {
@@ -77,7 +77,7 @@ const shoes = [
     description:  'Vans style Nike',
     width:        500,
     height:       500,
-    imagePath:    'seeds/shoes.js',
+    imagePath:    `isle-9`,
 
   },
 ]

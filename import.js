@@ -4,12 +4,12 @@ const dotenv = require('dotenv').config();
 // Import seed data
 const shoeSeed = require(`./seeds/shoes.js`);
 const memberSeed = require(`./seeds/members.js`);
-const subscribeSeed = require(`./seeds/subscribes.js`);
+const subscribeSeed = require(`./seeds/subscribers.js`);
 
 // Define model
 const Shoe = require(`./models/shoe.js`);
 const Member = require(`./models/member.js`);
-const Subscribe = require(`./models/subscribe.js`);
+const Subscriber = require(`./models/subscriber.js`);
 
 /*******************************/
 /* Mongoose/MongoDB Connection */
@@ -31,17 +31,17 @@ db.once('open', function() {
 
 });
 
-Shoe.insertMany(dbSeed, function(error, shoe) {
+Shoe.insertMany(shoeSeed, function(error, shoe) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });
 
-Member.insertMany(dbSeed, function(error, member) {
+Member.insertMany(memberSeed, function(error, member) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });
 
-Subscribe.insertMany(dbSeed, function(error, subscribe) {
+Subscriber.insertMany(subscribeSeed, function(error, subscriber) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });

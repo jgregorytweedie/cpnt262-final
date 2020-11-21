@@ -10,4 +10,4 @@ const gallerySchema = new mongoose.Schema(
 
 
 
-module.exports = mongoose.model('Subscribe', gallerySchema);
+module.exports = mongoose.model('Subscriber', gallerySchema);
