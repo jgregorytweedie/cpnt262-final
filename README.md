@@ -21,4 +21,5 @@
 5. [w3schools for converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 6. [css-tricks for flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 7. [In class code and recordings](https://github.com/sait-wbdv/in-class)
+8. The Rock 
     
