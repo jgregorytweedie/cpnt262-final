@@ -1,18 +1,30 @@
-
 /* Subscribe page */
 
-/* Form */
-.form-wrapper {
-  min-height: 100vh;
-  display: flex;
+body {
+
+  background-image: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+
+
+.wrapper {
+  overflow: hidden;
+  background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  margin: 0;
+}
+
+/* Form */
 
 .form {
   min-height: 40vh;
   margin: auto;
-  border: 2px solid grey;
-  border-radius: 8px;
-  background-color:white;
+ 
   display: flex;
 }
 
@@ -30,10 +42,7 @@ fieldset legend {
 
 fieldset p {
   display: flex;
-}
-
-fieldset p label {
-  width:25px;
+  margin-bottom: 20px; 
 }
 
 fieldset p input, fieldset ul label {
@@ -59,73 +68,82 @@ fieldset button {
   margin: 5px auto;
 }
 
+.check-box {
+display: flex;
+justify-content: center;
+list-style-type: none;
+
+}
+
 /* Button with hover and active states */
 
   /* subscribe */
-.signup{
+
+main {
+padding-top: 10rem;  
+margin: 0 auto; 
+width: 30em;
+
+}
+
+.signup h1{
+  -webkit-text-stroke: .5px black;
+  color: white;
+  text-shadow: 1px 3px 2px #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  font-family: 'Oswald', sans-serif;
+  font-size:47px;
+}
+
+.tagline {
+  font-family: 'Fjalla One', sans-serif;
+
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: 60vw;
-  height: 50vh;
-  border: solid gray 1em;
-  background-color: white;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right:auto;
-}
-
-.singup h1{
-  font-size:17px;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
+  font-size: 25px;
 }
 
 .textfield p input{
   display: inline-block;
-  width: 40vw;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.textfield p label{
-  display: inline-block;
-  width: 4em;
- font-size: 18px;
+.textfield p label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
 }
 
 abbr{
   color: red;
 }
 
-form button{
-  font-size: 20px;
-  margin-left: 5em;
-  margin-right: auto;
-  margin-top: 3em;
-  padding:2em;
-  border-radius:1em;
+button:active {
+  transform: scale(1);
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  padding: 0.2rem;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 form button:hover{
-  color:black;
-  background-color: tomato;
-  padding:2em;
+  background-color: black;
+  color: red; 
+  border: 1px solid red;
 }
- .fab {
-   display: flex;
-   flex-wrap:wrap ;
-   justify-content: center;
-   justify-items: center;
-   align-items:center;
-    text-align: center;
-    padding: 1em;
-   background-color:black;
-   font-size: 40px; 
-   color:white;
-   padding:0.2em;
-  }
+
+.footer {
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
