@@ -14,7 +14,7 @@ const members = require('./seeds/members');
 
 // import models- ivan
 const Shoe = require('./models/shoe.js');
-const Member = require('./models/member.js');
+// const Member = require('./models/member.js');
 const Subscriber = require('./models/subscriber.js');
 
 // adding in connection to mongoDB - jayden
@@ -86,7 +86,7 @@ app.get('api/v0/members', function(request, response){
 // *************************************************************************************************
 
 // gallery/:id to get object individually
-app.get('api/v0/shoes/:id', function(request, response){
+app.get('api/v0/gallery/:id', function(request, response){
   let shoeId = request.params.id;
   Shoe.findOne({id: shoeId}, function(error,shoes){
     if (error) {
