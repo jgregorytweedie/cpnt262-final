@@ -83,7 +83,7 @@ main {
 padding-top: 10rem;  
 margin: 0 auto; 
 width: 30em;
-
+background-color: rgb(160, 160, 160);
 }
 
 .signup h1{
@@ -110,6 +110,8 @@ width: 30em;
   display: inline-block;
   font-size: 18px;
   margin-bottom: 20px;
+  
+  font-family: 'Oswald', sans-serif;
 }
 
 .textfield p label {
@@ -117,6 +119,8 @@ width: 30em;
   clear:left;
   text-align:right;
   padding-right:10px;
+  
+  font-family: 'Fjalla One', sans-serif;
 }
 
 abbr{
