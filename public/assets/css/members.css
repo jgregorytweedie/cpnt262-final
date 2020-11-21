@@ -91,7 +91,7 @@ figure img{
 
 /* making it pretty */
 .card figcaption{
-  font-size:  11px;
+  font-size:  12px;
    text-align: center;
    
 }
@@ -137,5 +137,5 @@ figure img{
    .info {
    margin:0  auto ;
     text-align: center; 
-     font-size:  11px;
+     font-size:  12px;
   }
